@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.animationEvA {
+    border-radius: 100%;
+    animation: lifeEvA linear alternate infinite;
+}
+
+.teal {
+    animation-duration: 950ms;
+    height: 4rem;
+    width: 4rem;
+}
+
+.purple {
+    animation-duration: 2100ms;
+    height: 6rem;
+    width: 6rem;
+}
+
+.green {
+    animation-duration: 1500ms;
+    height: 3rem;
+    width: 3rem;
+}
+
+.indigo {
+    animation-duration: 1800ms;
+    height: 5rem;
+    width: 5rem;
+}
+
+@keyframes lifeEvA {
+    0% {
+        transform: rotateY(360deg) rotateX(360deg) rotateZ(-360deg);
+    }
+}
