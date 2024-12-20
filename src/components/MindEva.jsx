@@ -14,6 +14,7 @@ const MindEva = () => {
   const predefinedResponses = {
     "qual o seu nome": "Meu nome é Eva, sua assistente pessoal.",
     "como você está": "Estou sempre pronta para te ajudar!",
+    "o que você pode fazer": "Eu posso te ajudar a lembrar de algumas coisas enquanto eu estiver em funcionamento, posso colocar músicas para tocar e consigo até contar algumas piadas! Quer tentar?", 
     "que horas são": `Agora são ${new Date().toLocaleTimeString("pt-BR")}.`,
     "qual é a data de hoje": `Hoje é ${new Date().toLocaleDateString("pt-BR")}.`,
   };
@@ -71,7 +72,7 @@ const MindEva = () => {
     let response = predefinedResponses[normalizedText];
 
     //Apresentação
-    if(normalizedText.startsWith("oi") || normalizedText.startsWith("oi eva") || normalizedText.startsWith("eva")) {
+    if(normalizedText.startsWith("oi") || normalizedText.startsWith("oi eva") || normalizedText.startsWith("eva") || normalizedText.startsWith("o que você pode fazer")) {
       response = "Oi, em que eu posso ajudar?";
       
       setTimeout(startListening, 2500)
